@@ -1,13 +1,10 @@
-.PHONY: up data seed down
+.PHONY: up seed down
 
 up:
 	docker compose up -d
 
-data:
-	uv run python scripts/download_scifact.py
-
 seed:
-	uv run python scripts/seed.py
+	uv run python scripts/download_scifact.py
 
 down:
 	docker compose down

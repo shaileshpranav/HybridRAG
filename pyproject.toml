@@ -7,8 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "datasets>=5.1.0",
     "fastembed>=0.8.1",
-    "huggingface>=0.0.1",
+    "huggingface-hub>=1.33.0",
     "numpy>=2.5.3",
+    "pyarrow>=25.0.1",
     "python-dotenv>=1.2.4",
     "pytrec-eval>=0.5",
     "qdrant-client>=1.19.1",
